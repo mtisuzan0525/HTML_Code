@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Function</title>
+</head>
+<!-- This is the JS function -->
+<body>
+
+<script type="text/javascript">
+	/*
+	function alertMe(){
+		alert('Function is working');
+	}
+
+	function average(a, b){
+		return ((a+b)/2);
+	}
+*/
+	function grade(cgpa){
+		var x = cgpa;
+		var result = "";
+		if(x>=80){
+			result = "A+";
+		}
+		else if(x>=75 && x<80){
+			result = "A";
+		}
+		else if(x>=70 && x<75){
+			result = "A-";
+		}
+		else{
+			result = "Less than A"
+		}
+		alert(result);
+	}
+
+grade(40);
+</script>
+
+</body>
+</html>

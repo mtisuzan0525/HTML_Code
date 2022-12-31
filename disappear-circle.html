@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Elements</title>
+
+	<!-- This is the Disappearing Elements style -->
+	<style type="text/css">
+		.circle{
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			float: left;
+			margin-right: 50px;
+		}
+		#lightgreen{
+			background-color: lightgreen;
+		}
+				#lightblue{
+			background-color: lightblue;
+		}
+				#lightgray{
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<!-- This is the Disappearing Elements -->
+<body>
+
+<div class = "circle" id = "lightgreen"></div>
+<div class = "circle" id = "lightblue"></div>
+<div class = "circle" id = "lightgray"></div>
+
+<script type="text/javascript">
+	document.getElementById('lightgreen').onclick = function(){
+		document.getElementById('lightgreen').style.display = "none";
+	}
+
+		document.getElementById('lightblue').onclick = function(){
+		document.getElementById('lightblue').style.display = "none";
+	}
+
+		document.getElementById('lightgray').onclick = function(){
+		document.getElementById('lightgray').style.display = "none";
+	}
+</script>
+
+</body>
+</html>

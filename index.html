@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .header {
+            display: inline block;
+            text-align: center;
+            background: cornflowerblue;
+            height: 80px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .navbar {
+            margin-top: 8px;
+            height: 30px;
+            width: 100%;
+            background: black;
+        }
+        
+        .navbar a {
+            color: white;
+            font-size: 21px;
+            text-decoration: none;
+            border-right: 1px solid white;
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .navbar a:hover {
+            color: black;
+            font-size: 30px;
+            background: white;
+        }
+        
+        .navbar a :last-child {
+            border-right: none;
+        }
+        
+        .con1 {
+            height: 450px;
+            width: 25%;
+            background: burlywood;
+            margin-top: 8px;
+            padding: 10px;
+            float: left;
+        }
+        
+        .con2 {
+            height: 450px;
+            width: 50%;
+            background: cyan;
+            padding: 10px;
+            margin: 8px;
+        }
+        
+        .con3 {
+            height: 450px;
+            width: 25%;
+            background: crimson;
+            padding: 10px;
+            float: right;
+            margin-top: -457px;
+            margin-left: 8px;
+        }
+        
+        .f1 {
+            height: 80px;
+            width: 50%;
+            float: left;
+            background: darksalmon;
+            text-align: center;
+        }
+        
+        .f2 {
+            height: 80px;
+            width: 50%;
+            background: lightblue;
+            text-align: center;
+        }
+        
+        @media screen and (min-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+
+
+        <h1>Humayun Ahmed <small>(Famous Bangladeshi Writter)</small></h1>
+
+
+
+
+    </div>
+    <!--Navbar-->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a> a
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+
+
+
+    </div>
+    <!--Content Area-->
+    <div class="content">
+        <div class="con1">
+            <p>Humayun Ahmed is a leading Bangladeshi writer, and the most prolific among his contemporaries. His phenomenal success is attributed to his ability to tell stories of contemporary Bengali men and women in simple and unostentatious language,
+                portraying them with spellbinding intimacy. Although his characters belong to a broad spectrum of society, Humayun is at his best while depicting the Bengali middle class. His first novel, Sankhanila Karagara, published in 1972, caused
+                a great stir among readers and the literary circles in Bangladesh. Since then, he has published more than a hundred novels. Many of his novels have been adapted successfully for television serials and plays. Ahmed did his Masters in Chemistry
+                at Dhaka University and obtained his Ph.D. in Polymer Chemistry from North Dakota State University. </p>
+
+        </div>
+        <div class="con2">
+            <p>His writings have an enchanting charm over Bangalees, especially the youths. Since the 90's he has been persuading the young generation like the 'Pied Piper of Hamelin'. His works have been drawing readers for more than two decades. Fiction
+                or non-fiction, he always had a story to tell. With unconventional beginnings, endings and characterizations, his works have an unusual spell-like quality. We become Himu, Misir Ali, Shuvra, Rupa, Baker bhai while reading his work. We
+                can find ourselves in Humayun's portrayal of characters and even our near and dear ones inside his stories. There is hardly ever anything like absolutely good or bad or evil or absolutely true or false in his creations which make them
+                more real and connect us with them even better, because that is exactly how real life is. Everything's relative, whether Himu's romantic indifference towards Rupa or Misir Ali's search for truth, which makes them humane, yet not cliché,
+                and they become a part of our lives. Humayun Ahmed presented each of the characters of his novels, stories, even non-fictions and films in such ways that not only the lead characters but also the second and third leads, and even the ones
+                with the tiniest bit of role in the creation will tell you a different story. Like the rickshaw puller in Aguner Poroshmoni, or the help and the shopkeeper.</p>
+
+        </div>
+        <div class="con3">
+            <p>His writings have an enchanting charm over Bangalees, especially the youths. Since the 90's he has been persuading the young generation like the 'Pied Piper of Hamelin'. His works have been drawing readers for more than two decades. Fiction
+                or non-fiction, he always had a story to tell. With unconventional beginnings, endings and characterizations, his works have an unusual spell-like quality. We become Himu, Misir Ali, Shuvra, Rupa, Baker bhai while reading his work. We
+                can find ourselves in Humayun's portrayal of characters and even our near and dear ones inside his stories. There is hardly ever anything like absolutely good or bad or evil or absolutely true or false in his creations which make them
+                more real and connect us with them even better, because that is exactly how real life is. Everything's relative, whether Himu's romantic indifference towards Rupa or Misir Ali's search for truth, which makes them humane, yet not cliché,
+                and they become a part of our lives. Humayun Ahmed presented each of the characters of his novels, stories, even non-fictions and films in such ways that not only the lead characters but also the second and third leads, and even the ones
+                with the tiniest bit of role in the creation will tell you a different story. Like the rickshaw puller in Aguner Poroshmoni, or the help and the shopkeeper.</p>
+
+        </div>
+
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="f1">
+            <h3>footer1</h3>
+
+        </div>
+        <div class="f2">
+            <h3>footer2</h3>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

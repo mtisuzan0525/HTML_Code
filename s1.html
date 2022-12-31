@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Security-Policy" content="default-src https://*; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'" />
+	<title>Login Page</title>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Web tools for education management" />
+<meta name="author" content="Orbund LLC" />
+<meta name="copyright" content="Orbund LLC. www.orbund.com" />
+<meta name="owner" content="Arif Joarder" />
+<link rel="stylesheet" href="/einstein-freshair/css/jquery-ui-latest.custom.css" type="text/css" />
+<link rel="stylesheet" href="/einstein-freshair/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="/einstein-freshair/css/inettuts_theme.css" type="text/css" />
+<link rel="stylesheet" href="/einstein-freshair/css/jquery.eatoast.min.css" type="text/css" />
+<style type="text/css">
+	th{
+		background-color: #336699;
+	}
+	.widget-head {
+		background:url(/einstein-freshair/images/themes/blue/head_blue.png) no-repeat top left;
+	}
+	.head{
+		background:url(/einstein-freshair/images/themes/blue/head_blue.png) no-repeat left top;
+	}
+	.information span, .l-active{
+		background:url(/einstein-freshair/images/themes/blue/arrow_blue.png) no-repeat left 1px;
+	}
+	.widget .widget-content div.bottom {
+		background:url(/einstein-freshair/images/themes/blue/bottombar_blue.png) no-repeat bottom right;
+	}
+	.start-page-head{color: #336699; font-weight:bold;}
+	a, a:hover, .div_head div, .information span, #attachment, span.header2:hover, span.selected, a.l-active{
+		color:#336699;
+	}
+</style>
+
+<script type="text/javascript" src="/einstein-freshair/js/jquery-latest.js"></script>
+<script type="text/javascript" src="/einstein-freshair/js/jquery-ui-latest.custom.min.js"></script>
+<script type="text/javascript" src='/einstein-freshair/js/jquery.autosize.js'></script>
+<script type="text/javascript" src="/einstein-freshair/js/external.js"></script>
+<script type="text/javascript" src="/einstein-freshair/js/jquery.eatoast.min.js"></script>
+	<style type="text/css">
+		.rta{font-weight:bold;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			 $("#loginBtn").click(function(){
+				 $.ajax({
+					url: "https://api.ipify.org?format=json",
+					async: false,
+					success: function(data) {
+						$("#frmlogin").append("<input type='hidden' name='remoteAddress' id='remoteAddress' value='" + data.ip + "'/>");
+						$("#frmlogin").submit();
+					}, error: function (jqXHR, exception) {
+						console.log(exception);
+						$("#frmlogin").submit();
+					}
+				});
+			});  
+		});
+	</script>
+</head>
+<body>
+<center>
+	<div>
+		<img border='0' src='logos/citylogo.png' style="max-height: 150px;" />
+		<br/>
+		<h1></h1>
+	</div>
+	<div class="clear"></div>
+	<div class="index-outer widget color-gray">
+		<div class="widget-content">
+			<form method="post" name="frmlogin" id="frmlogin" action="authenticate.jsp">
+				<div class="index-content">
+					<br/><br/>
+					<table>
+						<tr>
+							<td width="35%" class="rta">Username</td>
+							<td width="65%"><input type="text" name="username" size="20" autocomplete="off" /></td>
+						</tr>
+						<tr>
+							<td class="rta">Password</td>
+							<td><input type="password" name="password" size="20" autocomplete="new-password" /></td>
+						</tr>
+						<tr>
+							<td class="rta">Role</td>
+							<td>
+								<select size="1" name="role">
+									
+										<option value="3" selected >Instructor</option>
+									
+									
+										<option value="1" >Student</option>
+									
+									
+									<option value="4" >Administrator</option>
+									
+										<option value="6" >Sub-Administrator</option>
+									
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>
+								
+								<input type="button" id="loginBtn" value="Login >>" name="B3" />
+								
+							</td>
+						</tr>
+						
+						
+						<tr>
+							<td>&nbsp;</td>
+							<td><a href="request_password.jsp">Forgot password?</a></td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+	</div>
+	<p><font size="1"><br/>Powered by Orbund</font></p>
+</center>
+<script language="JavaScript">
+
+</script>
+
+<br/><br/>
+<h3>
+<center><font color="black">
+
+
+</font></center>
+</h3>
+
+
+<script type="text/javascript">
+function resizeLoginPage() {
+    var content = document.getElementsByClassName('index-content');
+    content[0].style.height  = '180px';
+}
+</script>
+
+</body>
+
+</html>

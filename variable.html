@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Variable</title>
+</head>
+<!-- This is the variable JS -->
+<body>
+<input type="text" id = "text1">
+<button id="button1">Button</button>
+<p id = "p1">
+	This is a paragraph!
+</p>
+
+<script type="text/javascript">
+	var x = 5;
+	var name = "First Name";
+
+	document.getElementById('button1').onclick = function(){
+		var our_Text = "";
+		our_Text = document.getElementById('text1').value;
+		document.getElementById('p1').innerHTML = our_Text;
+	}
+
+	//alert(x);
+</script>
+
+</body>
+</html>
